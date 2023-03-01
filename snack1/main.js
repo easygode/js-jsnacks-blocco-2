@@ -1,9 +1,16 @@
 
-const num = [0, 1, 2, 3, 4];
+let sum = 0;
+let count = 1;
 
-let i = 0;
+while (count < 6) {
 
-while (i < num.lenght) {
-prompt = (Number('Inserisci un numero'));
-i++;
+    const input = Number(prompt(`Inserisci un numero (${count})`));
+    
+    if(!isNaN(input)) {
+        sum += input;
+        count++;
+    }
 }
+
+alert(sum);
+
